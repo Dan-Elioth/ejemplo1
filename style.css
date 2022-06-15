@@ -1,0 +1,184 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #003865 ;
+
+}
+
+.logo{
+    
+    margin-top: -20px;
+    margin-bottom: -25px;
+    margin-left: 25px;
+
+}
+
+.imglogo{
+    animation-name: slidenlogo, latido;
+    animation-duration: 5s, 0.8s;
+    animation-iteration-count: 1, infinite;
+    animation-direction: alternate;
+}
+    
+
+@keyframes slidenlogo{
+    from{
+        margin-left: -100%;
+    }
+    80%{
+        transform: scale(0.8);
+    }
+    90%{
+        transform: scale(1.2);
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+
+@keyframes latido{
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1.1);
+    }
+
+}
+
+
+
+.sociales{
+    margin-top: -5px;
+    margin-right: 20px;
+}   
+
+ul{
+    margin: 0px;
+    padding-top: 10px;
+}
+
+nav{
+    text-align: center;
+    background-color: #F7A801;
+    height: 40px;
+}
+nav ul li{
+    display: inline;
+    padding: 10px 30px 10px 30px;
+    
+}
+
+nav ul li:hover{
+    background-color: #003865;
+    padding: 10px 30px 10px 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    text-shadow: 0.5px 0.5px 0.5px #F7A801;
+    font-weight: bold;
+
+}
+
+nav ul li a:hover{
+    color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+  
+}
+
+section{
+    display:flex;
+    flex-flow: wrap;
+}
+
+article{
+    padding: 10px;
+    border: 2px solid black;
+    margin: 15px;
+    flex: 20%;
+}
+
+.imagen{
+    text-align: center;
+}
+
+.imagen img{
+    width: 200px;
+}
+
+.imagen img:hover{
+    transform: rotate(5deg) scale(1.2);
+}
+
+
+.f1{
+    filter: grayscale();
+}
+.f1:hover{
+    filter: none;
+}
+
+.f2{
+    filter: blur(10px);
+}   
+.f2:hover{
+    filter: none;
+}
+.f3{
+    filter: contrast(300%);
+}
+
+.f3:hover{
+    filter: none;
+}
+
+.piepag{
+    background-color:  #003865;
+    margin-top: 3px;
+    height: 100px;
+    width: 100%;
+    float: left;        
+}
+
+#pie{
+  
+    margin-top: 60px;
+    text-align: center;
+
+}
+
+.titulo1{
+    /*animation: slidein 3s infiniti alternate*/
+    animation-name: slidein;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction:  alternate;
+}
+
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    70%{
+        font-size: 300%;
+        margin-left: 40%;
+        width: 150%;
+    
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+
+
